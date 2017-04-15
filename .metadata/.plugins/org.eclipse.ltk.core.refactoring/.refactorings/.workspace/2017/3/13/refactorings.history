@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;SVMTest&apos; to &apos;SVMLib&apos;&#x0D;&#x0A;- Original element: &apos;SVMTest&apos;&#x0D;&#x0A;- Renamed element: &apos;SVMTest&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;SVMTest&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=SVMTest" name="SVMLib" references="true" stamp="1490502527062" version="1.0"/>
+</session>

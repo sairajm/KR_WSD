@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/SVMLib/src/com/svm/lib/svm_predict.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.svm.lib.svm_predict"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="C:\Users\Sairaj\Downloads\total_output.txt C:\Users\Sairaj\Downloads\model2.txt C:\Users\Sairaj\Downloads\final2.txt"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="SVMLib"/>
+</launchConfiguration>
