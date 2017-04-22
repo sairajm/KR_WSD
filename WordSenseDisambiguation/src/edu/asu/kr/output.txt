@@ -88,7 +88,7 @@ v85,maple
 v86,edible
 v87,sweet
 v88,user
-edgedef> node1, node2, directed, weight, labelvisible
+edgedef> node1,node2,directed,weight,labelvisible
 v0,v0,false,2,true
 v0,v5,false,1,true
 v0,v44,false,1,true
