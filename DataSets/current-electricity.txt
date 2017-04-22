@@ -1,0 +1,27 @@
+An electric current is a flow of electric charge. In electric circuits this charge is often carried by moving electrons in a wire. It can also be carried by ions in an electrolyte, or by both ions and electrons such as in an ionised gas (plasma).[1]
+
+The SI unit for measuring an electric current is the ampere, which is the flow of electric charge across a surface at the rate of one coulomb per second. Electric current is measured using a device called an ammeter.[2]
+
+Electric currents cause Joule heating, which creates light in incandescent light bulbs. They also create magnetic fields, which are used in motors, inductors and generators.
+
+The particles that carry the charge in an electric current are called charge carriers. In metals, one or more electrons from each atom are loosely bound to the atom, and can move freely about within the metal. These conduction electrons are the charge carriers in metal conductors.
+
+In a conductive material, the moving charged particles which constitute the electric current are called charge carriers. In metals, which make up the wires and other conductors in most electrical circuits, the positively charged atomic nuclei are held in a fixed position, and the negatively charged electrons are free to move, carrying their charge from one place to another. In other materials, notably the semiconductors, the charge carriers can be positive or negative, depending on the dopant used. Positive and negative charge carriers may even be present at the same time, as happens in an electrochemical cell.
+
+A flow of positive charges gives the same electric current, and has the same effect in a circuit, as an equal flow of negative charges in the opposite direction. Since current can be the flow of either positive or negative charges, or both, a convention is needed for the direction of current that is independent of the type of charge carriers. The direction of conventional current is arbitrarily defined as the same direction as positive charges flow.
+
+The consequence of this convention is that electrons, the charge carriers in metal wires and most other parts of electric circuits, flow in the opposite direction of conventional current flow in an electrical circuit.
+
+Since the current in a wire or component can flow in either direction, when a variable I is defined to represent that current, the direction representing positive current must be specified, usually by an arrow on the circuit schematic diagram. This is called the reference direction of current I. If the current flows in the opposite direction, the variable I has a negative value.
+
+When analyzing electrical circuits, the actual direction of current through a specific circuit element is usually unknown. Consequently, the reference directions of currents are often assigned arbitrarily. When the circuit is solved, a negative value for the variable means that the actual direction of current through that circuit element is opposite that of the chosen reference direction. In electronic circuits, the reference current directions are often chosen so that all currents are toward ground. This often corresponds to the actual current direction, because in many circuits the power supply voltage is positive with respect to ground.
+
+In alternating current (AC) systems, the movement of electric charge periodically reverses direction. AC is the form of electric power most commonly delivered to businesses and residences. The usual waveform of an AC power circuit is a sine wave. Certain applications use different waveforms, such as triangular or square waves. Audio and radio signals carried on electrical wires are also examples of alternating current. An important goal in these applications is recovery of information encoded (or modulated) onto the AC signal.
+
+In contrast, direct current (DC) is the unidirectional flow of electric charge, or a system in which the movement of electric charge is in one direction only. Direct current is produced by sources such as batteries, thermocouples, solar cells, and commutator-type electric machines of the dynamo type. Direct current may flow in a conductor such as a wire, but can also flow through semiconductors, insulators, or even through a vacuum as in electron or ion beams. The electric charge flows in a constant direction, distinguishing it from AC. A term formerly used for direct current was galvanic current.
+
+Natural observable examples of electrical current include lightning, static electricity, and the solar wind, the source of the polar auroras.
+
+Man-made occurrences of electric current include the flow of conduction electrons in metal wires such as the overhead power lines that deliver electrical energy across long distances and the smaller wires within electrical and electronic equipment. Eddy currents are electric currents that occur in conductors exposed to changing magnetic fields. Similarly, electric currents occur, particularly in the surface, of conductors exposed to electromagnetic waves. When oscillating electric currents flow at the correct voltages within radio antennas, radio waves are generated.
+
+In electronics, other forms of electric current include the flow of electrons through resistors or through the vacuum in a vacuum tube, the flow of ions inside a battery or a neuron, and the flow of holes within a semiconductor
