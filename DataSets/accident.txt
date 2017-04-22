@@ -1,0 +1,54 @@
+An accident, also known as an unintentional injury, is an undesirable, incidental, and unplanned event that could have been prevented had circumstances leading up to the accident been recognized, and acted upon, prior to its occurrence. Most scientists who study unintentional injury avoid using the term "accident" and focus on factors that increase risk of severe injury and that reduce injury incidence and severity.
+
+Types
+
+Physical and non-physical
+Physical examples of accidents include unintended motor vehicle collisions or falls, being injured by touching something sharp, hot, electrical or ingesting poison. Non-physical examples are unintentionally revealing a secret or otherwise saying something incorrectly, forgetting an appointment etc.
+
+By activity
+Accidents during the execution of work or arising out of it are called work accidents. According to the International Labour Organization (ILO), more than 337 million accidents happen on the job each year, resulting, together with occupational diseases, in more than 2.3 million deaths annually.[1]
+In contrast, leisure-related accidents are mainly sports injuries.
+By vehicle
+
+Versailles rail accident in 1842
+Aviation
+Bicycles
+Sailing ships
+Traffic collisions
+Train wrecks
+Trams
+Common causes
+
+
+Incidence of accidents (of a severity of resulting in seeking medical care), sorted by activity (in Denmark in 2002).
+Poisons, vehicle collisions and falls are the most common causes of fatal injuries. According to a 2005 survey of injuries sustained at home, which used data from the National Vital Statistics System of the United States National Center for Health Statistics, falls, poisoning, and fire/burn injuries are the most common causes of death.[2]
+
+The United States also collects statistically valid injury data (sampled from 100 hospitals) through the National Electronic Injury Surveillance System administered by the Consumer Product Safety Commission.[3] This program was revised in 2000 to include all injuries rather than just injuries involving products.[3] Data on emergency room visits is also collected through the National Health Interview Survey.[4] In The U.S. the Bureau of Labor Statistics has available on their website extensive statistics on workplace accidents.[5]
+
+Accident models
+Many models to characterize and analyze accidents have been proposed,[6] which can by classified by type. Notable types and models include:[7]
+
+Sequential models
+Domino Theory[8]
+Loss Causation Model[9]
+Complex linear models
+Energy Damage Model[10]
+Time sequence models
+Generalized Time Sequence Model[11]
+Accident Evolution and Barrier Function[12]
+Epidemiological models
+Gordon 1949
+Benner 1975 (part of a larger model)
+Onward Mappings Model based on Resident Pathogens Metaphor[13]
+Systemic models
+Rasmussen
+Reason Model of System Safety (embedding the Swiss cheese model)
+Healthcare error proliferation model
+Human reliability
+Woods, 1994
+Non-linear models
+System accident[14]
+Systems-Theoretic Accident Model and Process (STAMP)[15]
+Functional Resonance Accident Model (FRAM) [16]
+Assertions that all existing models are insufficient[17]
+Ishikawa diagrams are sometimes used to illustrate root-cause analysis and five whys discussions.
