@@ -68,8 +68,18 @@ public class corticalHelper {
 	public HashMap<String, Integer> uniqueRelatedWords(String word)
 	{
 		HashMap<String, Integer> map;
-		List<Term> relatedWords = getRelatedWords(word);
-		map = removeDuplicates(relatedWords);
-		return map;
+		List<Term> relatedWords;
+		try
+		{
+			relatedWords = getRelatedWords(word);
+			map = removeDuplicates(relatedWords);
+			return map;
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		
+		return null;
 	}
 }

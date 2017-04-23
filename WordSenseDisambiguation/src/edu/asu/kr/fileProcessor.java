@@ -1,10 +1,50 @@
 package edu.asu.kr;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class fileProcessor {
+	
+	public ArrayList<String> readDirectory(String path)
+	{
+		File folder = new File(path);
+		File[] list = folder.listFiles();
+		ArrayList<String> fileNames = new ArrayList<String>();
+		for(int i=0; i<list.length; i++)
+		{
+			if(list[i].isFile())
+			{
+				fileNames.add(list[i].getName());
+			}
+		}
+		
+		return fileNames;
+	}
+	
+	public String getWordName(String fileName)
+	{
+		if(fileName.contains("-"))
+		{
+			String[] words = fileName.split("-");
+			String wordName = words[0];
+			return wordName;
+		}
+		else
+		{	
+			if(fileName.contains("."))
+			{
+				System.out.println(fileName);
+				String[] w = fileName.split("\\.");
+				System.out.println("Word after split "+w.length );
+				return w[0];
+			}
+		}
+		
+		return null;
+	}
 	
 	public String[] readSentences(String path)
 	{
