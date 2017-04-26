@@ -1,0 +1,80 @@
+Tips for Derivatives
+
+or: How I Learned to Stop Worrying and Love the Chain Rule
+
+Note: This page has brief summaries of the different derivative rules and when to use them. You may want to skip directly to the worked examples of derivatives page.
+
+The creators of this website, in our infinite wisdom, have deemed it appropriate to have a page with a number of examples of derivitives, to demonstrate the types of tactics we use to tackle complicated derivatives.
+
+basic derivatives
+chain rule
+product rule
+quotient rule
+difficult derivatives (read this!)
+For this page, you will need to have knowledge of most notions of derivatives, such as the product rule, chain rule, and other derivative rules, as well as the derivatives of basic functions.
+the polynomial
+
+We'll start off with the most basic function to take the derivative of - a polynomial. If we had a function f(x) = 3x2 + 4x - 5, to find f'(x), we utilize the sum and power rules to find that f'(x) = 6x + 4.
+
+In conclusion, to find the derivative of a polynomial, you differentiate each term of the polynomial - in our case, 3x2 differentiated becomes 6x, 4x diferentiated becomes 4, and -5 differentiated becomes 0. We add up the resultant terms, 6x + 4 + 0 = 6x + 4. <top>
+the chain rule
+
+Now, suppose we had to differentiate f(x) = (3x2 + 4x - 5)2. We may be inclined to multiply out this polynomial, and then differentiate it out term by term. However, as lazy mathematicians, we are always looking for tricks to make life easier. Here, we can use the chain rule.
+
+The chain rule helps us find the derivative of functions compounded inside of one of another. In our example, f(x) = (3x2 + 4x - 5)2, we have our polynomial, 3x2 + 4x - 5, inside our outer function, (something)2. Now that we've identified this as a compound function, we can use the chain rule to find that 
+f'(x) = 2(3x2 + 4x - 5)(6x + 4).
+
+Chain rule: [f(g(x))]' = f'(g(x)) * g'(x)
+f(x) = (3x2 + 4x - 5)2
+f'(x) = 2(3x2 + 4x - 5) * (6x + 4)
+
+In conclusion, we use the chain rule to make differentiating easier (and, as we'll see, in some cases it allows us to find derivatives where we couldn't before). ANYTIME that you see a function nested inside of another function, think to use the chain rule. It is incredibly useful. Imagine, for example, if we had tried to multiply out f(x) = (3x2 + 4x - 5)2 and then differentiated it. Slightly manageable, right? Now, imagine if we tried to multiply out f(x) = (3x2 + 4x - 5)5. Not worth the time, but with the chain rule it becomes incredibly easy. <top>
+
+the product rule
+
+What if, instead of exponentiating our polynomial, we multiplied it by another function. Now, we have h(x) = (3x2 + 4x - 5) * sin(x). In order to differentiate this, we need the product rule.
+
+The product rule allows us to differentiate a function when the function is a product of two distinct parts. In this example, we have the polynomial 3x2 + 4x - 5 and the transcendental function sin(x).
+
+Product Rule: [f(x) * g(x)]' = f'(x) * g(x) + f(x) * g'(x)
+h(x) = (3x2 + 4x - 5) * sin(x) 
+h'(x) = (6x + 4) * sin(x) + (3x2 + 4x - 5) * cos(x)
+
+In conclusion, the product rule is a necessity whenever we need to differentiate a function which is a product of two subfunctions that are easier to differentiate. Notice that, in our example, our function was fairly complicated, yet with the product rule, it was fairly easy to calculate the derivative. <top>
+the quotient rule
+
+As I'm sure you can guess, the quotient rule allows us to differentiate quotients that would otherwise be very difficult to differentiate. It is actually an application of the chain and product rules, which means that you can derive it knowing only those two rules, but it may be useful to memorize.
+
+To demonstrate, we would use the quotient rule if we had a fraction in our function with variables in both the numerator and denominator of the fraction. For example, if . To find f'(x), we would need to use the quotient rule.
+
+Quotient Rule:  = 
+so we write as g(x)/h(x), where g(x) = 3x2 + 4x - 5, and h(x) = ex + x2. Then we know that g'(x) = 6x + 4, and h'(x) = ex + 2x.
+
+Then 
+The gut impulse for many students is to use the quotient rule whenever there is a fraction in our expression. This is incorrect! The quotient rule is to be used whenever our function is composed of a subfunction dividing another subfunction; in other words, when we have non-constant variables in the numerator and the denominator of a function.
+
+For example,
+
+ USE QUOTIENT RULE
+
+ NO DON'T USE QUOTIENT RULE
+
+In the second case, all we need to do is pull out the 1/4 dividing the whole expression and then differentiate using the constant rule. We could actually use the quotient rule in the second case, since g(x) = 4 is a function, but it makes things unnecessarily difficult.
+
+In conclusion, use the quotient rule to help you find the derivative of functions that have fraction expressions in them, but only if you have to. It often gives you and ugly expression that is difficult to simplify and may steer you towards an incorrect answer if you use it when there are easier methods. This is why we don't normally use it if we can just cancel out the denominator or if the denominator is constant. <top>
+tips for computing difficult derivatives
+
+It may be easy to calculate straight-up examples of the different rules, but it is often difficult when we have to differentiate a function that features a combination of products, quotients, and compounded (chained) functions.
+
+Typically, there are a few things that we try to do to make the derivatives easier to find and to prevent ourselves from making mistakes.
+
+Reduce any fractions to be as basic as possible. 
+Suppose we had to find the derivative of . We may be inclined to use the quotient rule. However, we can save ourselves some work, and some nasty simplification, by noticing that , leading us to see that f'(x) = 1. We could have used quotient rule before to get the same answer, but it would have required us to factor and simplify a much more difficult equation, as well as make more computations.
+
+Recognize when we can use the chain rule.
+The chain rule is astonishingly useful. It is the seminal tool of a mathematician studying calculus, and aside from saving us a lot of time and calculations, it also enables us to differentiate functions that often seem impossible to differentiate. Whenever you see a nested function, try to assess if the chain rule is needed (it usually is). A nested function would be whenever you have some sort of function, whether it be x2 + 4, or tan(x), inside of another function, such as an exponent ([tan(x)]3), or inside a trig function (sin(x2 + 4)), or possibly the exponential function (etan(x)). In any of these situations, the chain rule is incredibly useful.
+
+When differentiating a difficult function, ALWAYS work from the outside in.
+We always want to start a long chain of differentiation by differentiating the last part of the function to touch the input - in short, the outermost part of the function. Suppose we had a function . The LAST THING that happens to the function is the product between the left term and the right term. Therefore, the first thing we need to deal with when differentiating is the product; we start with the product rule.
+
+To see this and other examples completely worked out, go to our page with worked out derivative examples.<top>

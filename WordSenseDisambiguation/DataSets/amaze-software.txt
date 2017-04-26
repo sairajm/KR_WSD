@@ -1,5 +1,0 @@
-Amaze is a technology developed by Deque Systems that uses overlays to make a website accessible to people with disabilities without touching the site’s code. Amaze is being used as part of the Department of Veterans' Affairs web accessibility remediation plan.[1]
-
-In June 2013, Computerworld honored Deque with the 21st Century Achievement Award for Innovation for their work on the Amaze technology.
-
-The Amaze technology represented a new approach to web accessibility software. The traditional way of correcting an inaccessible site was to go back into the source code, reprogram the error, and then test to make sure the bug was fixed. If the website was not scheduled to be revised in the near future, that error (and others) would remain on the site for a lengthy period of time, possibly violating accessibility guidelines. With Amaze overlays, the error can be fixed quickly and cost-effectively. The overlay can also be used as a guide to update the code when the website’s revision is scheduled to take place. It can also be used to remediate third-party web content such as from social media sites.

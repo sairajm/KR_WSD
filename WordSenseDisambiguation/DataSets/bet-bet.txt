@@ -1,0 +1,112 @@
+I have explained the difference between vigorish and overround as they are NOT the same. The maths explaining the link between the two concepts is correct... please do not alter (a request, not an order). I was a bookie and am currently a maths/stats teacher/lecturer.
+
+As for who pays the vigorish? Who cares? The bookmaker certainly doesn't! He pockets 10 bucks no matter what! It's all semantics as to 'who paid the vigorish'. A logical case could be made for all three mentioned possibilities: winner, loser and both.
+
+How about this though...? The bookie decides! IF the two punters were in the presence of the bookie and both handed over individually marked $10 bills to the tune of $110 each in order to get a return of $210, then the bookie on paying the aforementioned $210 to the winner could choose which marked $10 bill to withhold for his own profit thus effectively making the decision as to whether the winner gets all his own marked notes back (loser pays vigorish) or only 10 out of the 11 (winner pays vigorish)! If the bookie takes the bets however with marked $5 bills, he would have the option of holding back two 'fivers' from either one of the punters or one 'fiver' from each (meaning both have paid!). See what I mean? AirdishStraus 10:54, 15 October 2007 (UTC)
+
+The main thing to keep in mind here, I think, is to avoid having your changes to the article labeled as original research. The only way to do that is to include footnotes to the various statements. Rray 13:53, 15 October 2007 (UTC)
+
+I think this is unnecessarily complicated. Vigorish is commission paid to the bookie, but in reality it's sort of like left over money after the payout. Exemplar:
+
+Assume your bookie takes 11-10 bets, that means you have to put down 11 to make 10. So, say you want to win $100 bucks on "the game". You'd have to put down $110 to make $100. So lets say there are two guys that want to bet on the game with the same bookie on opposite sides. Each puts down $110, that means there's $220 in the bookie's pot. The guy that wins gets back his money ($110) and in addition gets his winnings ($100). That's $210 paid to the winner, and the remaining $10 goes to the bookie for being a cool guy. So, nobody "pays the vig", in reality. As the winner you get back exactly what you were promised. 11 got you 10, in this example. Varying the betting ratio allows the bookie to always make money, no matter who wins the event. All the money he doesn't pay out he keeps. Vigorish.
+
+This is my understanding, anyway. I'm not actually a gambler, I just play one on tv. I didn't want to post this in the main article until someone checks it out, so I put it here in talk. If it looks right, anyone can add it in whatever form seems fitting to them. -AMichel
+
+---
+
+The "Examples" and the other parts of this page explaining that only the winner pays the vig are not only awkwardly worded but some parts of them are just flatly wrong.
+
+Only if you consider that two people who place opposing bets with the same bookmaker are competing for one another's money does this make any sense. This is, of course, wrong. They are competing for the bookie's money. Each of their wagers exists in a vaccum.
+
+This also seems to assume that all people are betting $110 on things. The only way you get the number $110 is if you assume a base wager of $100 (like all bookies do) and factor in a 10% vig. To assume that the loser would have bet $110 had he not needed to pay vigorish is patently ridiculous.
+
+Bettors are, in reality, WAGERING $100 of the money they give to bookmakers and paying $10 in commission. This situation is unchanged by the outcome of the bet.
+
+I am going to correct this.
+
+---
+
+I have read what is available on the internet about defining vigorish, and I think there is a major problem with the standard definition and that trying to say who is paying for the vigorish (the winner, the loser, or both) depends on your assumptions about their wagering habits. I think these assumptions should be made very clear in the definition.
+
+
+First we need to establish how vigorish comes into play. It is most natural to assume that vigorish is factored in proportionally to the true odds, i.e. +100 vs +100 fair odds become -110 vs -110 with vigorish factored in, rather than something like -120 vs +100. And -200 vs +200 fair odds could become -220 vs +191.
+
+To asses who pays the vigorish, we need to be able to talk about what bets would have been made if there was no vigorish (fair odds) and the difference in payouts with the presence of vigorish. This brings some inherent subjectivity into play, because we can't say exactly what bets someone would have made given fair odds, because this depends on the behavior of the gambler. But I believe there are several natural options to consider:
+
+1.) The gambler has a given amount he wants to win, which is independent of the presence or absence of vigorish. As an example, with an even matchup we would have +100 vs +100 for fair odds, then a gambler wagers 100 to win 100. With vigorish, the odds might be -110 vs -110 and so gamblers must wager 110 to win 100. In this case, losers lose 110 under vig compared to 100 under fair odds, so the loser pays $10 extra. The winner gets back his 110 + 100 profit, compared to getting back his 100 + 100 profit, for no net difference, since he is up 100 net either way. So the loser pays the full vigorish under this assumption.
+
+2.) The gambler has a given amount he is willing to risk. Under fair odds the gambler risks 100 to win 100. Under vigorish the gambler still risks 100 to win 100*(100/110) = 90.1. Under this assumption, the loser loses 100 in both cases, so pays no vigorish, the winner wins 100 net under fair odds and 90.9 net under vigorish, so he pays 9.1 in vigorish. So the winner pays the full vigorish under this assumption.
+
+3.) The gambler is a Kelly gambler, meaning he seeks to maximize his rate of return in the limit of infinite bets placed over time. In this case he will bet more when the payout reflects a bigger advantage for him (roughly speaking he will bet proportionaly to his edge). The fact that he bets at all indicates that he thinks he has an advantage in the bet, so the presence of vigorish cuts into this edge, since it reduces the payout for a given amount wagered. Therefore Kelly bettors on either side of the wager will both bet less than they would have at fair odds ( assuming proportional vigorish as outlined above). The loser ends up losing less than he would have with fair odds, so counter-intuitively losers do better with vigorish. The winner not only receives a lower payout factor on his bet, but he also risked less than he would have at fair odds, so he pays the full vigorish, plus the amount saved by the loser, since
+
+(amount cost by winners) - (amount saved by the losers) = (full vigorish raked by the bookie)
+must be true. So for Kelly gamblers, the losers pay negative vigorish, while the winners pay more than the full vigorish raked in by the bookie.
+
+I think this clarifies the conversation regarding "who pays the vig." You cannot say precisely who pays it unless you define your gambler's behavior with respect to changing odds.
+
+I am updating the page entry to reflect this.
+
+I think it would be desirable to define a vigorish % and tell how to calculate it. With respect to my above clarification on who pays the vig, it makes no sense to talk about the vig % paid by a generalized gambler, since the % he pays depends on what bets he would have made at fair odds (whether he falls into category 1, 2, 3, or something else), and also on his win/loss percentage. These complications are not desirable to be contained in a fundamental definition of a concept. We can do without them if vig % is defined as the % lost to a risk free wager. Such a wager is made by betting all possible outcomes with relative amounts bet so that the gambler receives the same amount of money in any outcome of the event (the same as he started with less the vigorish). Such a wager is always possible, but I won't get into that derivation here. This is a natural definition, because risk does not come into play so it most closely reproduces the situation prior to the bet being placed. The only difference in your bankroll is what the bookie has taken, and he takes the same amount every time in every outcome.
+
+For a two outcome event, this works out to
+
+vigorish = {\displaystyle 1-{p*q \over p+q}} {\displaystyle 1-{p*q \over p+q}}
+
+where the {\displaystyle p} p and {\displaystyle q} q are the decimal payouts for each outcome. I will work out the formula for any number of countable outcomes later.
+
+--Wstrong 04:42, 2 January 2007 (UTC)
+
+eventhough the article cites a website at the bottom, it does not change the fact that most of this article is a direct lift from the other website.
+
+Isn't vigorish also a slang word used by the Mafia in the U.S. to mean interest on an (illegal) loan?
+
+-yeah that would be my main understanding of the word. Maybe as i'm a big sopranos fan. Someone should write an article with this aspect in it.
+
+The vigorish is the commission--the fee paid to the bookie for using his services.
+
+If you and I bet $110 each on a sporting event, the loser ends up -$110 and the winner ends up +$110.
+
+But if we go to a bookie and bet on opposite outcomes, the loser still ends up -$110, but the winner ends up only +$100.
+
+So who pays the vig? The winner. He is the one who is out ten dollars because he used a bookie's services. The loser is out nothing for the use of a bookie.
+
+67.185.114.32 23:56, 22 August 2006 (UTC)
+
+No. He's out $110, let's say because the Jets lost. The fact that he lost the bet means that the bookie COULD HAVE counted on the Jets losing and pocketed $110 in theory! In reality, the bookie keeps only 10 of those dollars for his profit, just as he put away $10 of the other guy's money, and uses the rest to protect himself from any outcome. Also, the fact that the loser could have won only $100 from the bet, means that $10 was being held by the bookie. So, both winner and loser have paid the vig.
+
+Am I understanding this right? If you convert the odds from one bookie to percentages, the total percentage of all outcomes is above 100% so they make a profit. The amount that this is over 100% by is the vig? —Preceding unsigned comment added by 84.67.208.14 (talk • contribs)
+This is a really simple question as far as who is paying the vig. Losing bettors pay the vig. How can the winners have paid the vig when they gets double their wager back and their vig back!?! The only people who actually end up having paid anything to the bookie in these bets are the losing bettors. What the vig does is reduce the potential return on any bet placed with a bookie. Winners may feel they are owed an extra 10%, but they are either ignorant of the commissions involved with bookies or just want more money.
+
+If you're a bettor then you will place a wager if your perceived odds of an event happening are greater than the implicit odds in the moneyline that the bookmaker is offering. The only way to truly determine who is "paying" vigorish is to compare the odds that individuals are getting on their bet to the "true" odds that the event they are betting on will occur. Since there is no way of determining "true" odds and because of the rationale behind betting, it is the case that neither bettor is paying vigorish. This can still be reconciled with the fact that bookmakers earn profit. They earn their profit because the odds they offer are based on balancing their book so that they are indifferent to the outcome. This means that as new bets are made bookmakers will continually change the odds that they offer. Because bettors get different odds than other bettors it means that if you could compare bets to "true" odds you would find that vigorish paid would differ amongst all bettors with no reason for winners of the bet or losers of the bet to uniformly be paying the same vigorish. I don't like the examples that are listed about how in some cases one side of the bet pays and the other in other instances. It seems like others agree with me. I would like to replace that explanation with mine. Any comments?? --Skatastic
+Another viewpoint as to who pays the vigorish is in terms of the expected value of the bet. Before you place the $110 on an evens bet you have $110. After you've placed the bet you have a fifty percent chance of winning $100, and therefore having $210, and a fifty percent chance of losing the $110, and therefore having nothing. You've exchanged something which has an expected value of $110 for something with an expected value of $105 - i.e. you've payed the bookie $5.
+
+So in this viewpoint it's clear that you have both paid $5 to the bookmaker which he keeps. The beauty of this viewpoint is that it's clear who has paid what even if it isn't an evens bets and also when the bookmaker is not flat. The fact that after the event which you are betting on has occured the odds have change from evens, or whatever they were, to 100% and 0% is irrelevant - you paid your commission before the event.
+
+That is the vigorish. Pseudospin (talk) 04:40, 27 November 2007 (UTC)
+
+I think Pseudospin gave the best explanation. In reality, the vigorish is paid to the bookmaker before the outcome of the event is even decided. So it's not "paid by the winner" or "paid by the loser", it is paid by both of them. This is the common sense answer. Deepfryer99 (talk) 13:55, 11 December 2007 (UTC)
+I've read what everyone has said so far about who pays the vig and most of it is just plain silly. The assertion in the text that the extent "a gambler pays vigorish fees...cannot be abstracted from an individual gambler's behavior" is false. The loser pays, period.
+
+How so?
+
+First of all, all that matters is what the gamblers did pay. All discussions about what they would have paid, should have paid or might have won under fairer odds are irrelevant. Who cares whether the gambler is a Kelly gambler or whether the gambler would have bet more or less under different circumstances, none of this matters.
+
+Let's look at the first example where each gambler puts up $110 to win $100. In order to make a case that the winner pays the vig, you have to ASSUME that the winner would have bet $110 under fair odds and therefore would have received $220. Since he only got $210 he paid the vig. Ridiculous! You can just as easily ASSUME that the gambler would have bet only $100 under fair odds and therefore only would have got back $200. This means that since he got back $210, he's actually up $10 with the vig not down $10. So the vig actually gives him more money not less. Of course, the money was the winner's $10 to begin with but why let that spoil the fun.
+
+Look, if you have to assume what the gamblers might have done in order to make your case why not go crazy with it? Why not assume that the winner would have bet $200 if the sun was shinning and therefore he would have won $400 so the vig is now $180 and the vig is also partially based on the weather. Silly huh?
+
+So instead of discussing what might have happened let's just look at what DID happen. If the odds are even money then the loser bets $100 plus he puts up $10 for the vig and the winner does likewise, he bets $100 and puts up $10 for the vig. They both post a $10 fee (the vig) because the bookmaker doesn't know who the loser will be. The winner wins $100 (even money) plus he gets back his bet of $100 AND he gets back the money he posted for the vig ($10). The winner gets $210 and he is out nothing (except for hypothetical money). The loser loses his bet $100 plus he loses the $10 he put up for the vig. This is not hypothetical, it comes out of the losers pocket. The loser goes home without his $10 and winner goes home with his $10. The loser paid the vig.
+
+The second example is the same. Say both bettors only have $100 and can't post the vig. In that case the bet is reduced to $90.90 and the vig is $9.09. It's pointless to propose that the winner would have bet the whole hundred if the bookmaker didn't charge a fee because the bookmaker does charge a fee. If the winner COULD HAVE made a bet with a friend at even money (no vig) I'm sure he would have. Both the winner and the loser bet with the bookmaker because they want to and they both know it's not free. The bookmaker charges a fee to place the bet but only the loser actually pays the fee. He is one out of pocket. The winner get his fee returned.
+
+Probably the only reason this is confusing at all is the fact that when a gambler goes to a bookmaker, he doesn't always know what the vig is. If the bookmaker says a $120 bet will give you $135, the gambler doesn't know what part of the $120 is his bet and what part is the vig. So the gambler might construct hypothetical scenarios out of what it could be and who might be paying the tab. Naturally, if the gambler wins he might wonder what he would have won without the vig. But for the bookmaker no such confusion exists. He knows exactly what the vig is and who pays it. It is the guy who walks out without his money; he's one that paid the bill. --Manabout (talk) 20:39, 27 April 2008 (UTC)
+
+
+
+Clearly none of you have bookies. The vig is 10% added on to the loser's tab. If I bet $100 and I lose, I owe my bookie $110. Period. If I win, I get $100. That's how it works in the illegal world of football betting. —Preceding unsigned comment added by 72.137.172.75 (talk) 01:17, 5 January 2009 (UTC)
+
+Isn't the point being missed here that you're assuming you are not quoted odds? If you are quoted fixed odds the vig is easily computable-- where it is assigned (winner or loser) *does* come down to a kind of physcological thing. It seems you are both talking about when you did not know the odds as such but were just quoted an all-in price, including the vig; in that case of course it is impossible to separate the two, unless of course you know that the bookie always operates on a fixed vig (be it absolute or by ratio).
+
+--Si Trew trewy@live.co.uk 2009-01-10 19:55 UTC/GMT —Preceding unsigned comment added by SimonTrew (talk • contribs)
+
+Is there a reliable source for an etymology section? Would be worth mentioning. --92.104.153.110 (talk) 13:34, 15 August 2008 (UTC)

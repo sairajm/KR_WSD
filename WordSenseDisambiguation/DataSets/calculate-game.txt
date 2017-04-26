@@ -1,9 +1,0 @@
-Calculation (also known as Broken Intervals and as Hopscotch[1]) is a solitaire card game played with a standard pack of 52 cards. It offers more scope for skill than many similar games; a skilled player can win Calculation more than half of the time when "normal play" can allow winning 1 in 5 times.[2]
-
-At the start of play, an ace, two, three, and four of any suit are removed from a standard deck of cards and laid out as the foundations. The ace foundation is to be built up in sequence until the king is reached, regardless of suit.
-
-The tableau, initially empty, consists of four piles of cards, usually arranged immediately below the four foundations.
-
-Play in Calculation is simple. A single card is turned up from the stock and played either to the top of any of the four tableau piles, or onto one of the foundations if desired. The top card of any tableau pile may also be played onto one of the foundation piles if it is the next number in the appropriate sequence for that foundation. The game is won when all cards have been played onto the foundations, and lost when no further play is possible.
-
-Variations which make the game more difficult are to play all 52 cards (that is, do not lay out ace, deuce, trey, quarter initially) and to use only three tableau piles instead of four. Although playing with both these variations makes the solitaire quite difficult, a very skilled player will still be able to win at least two games out of three.
