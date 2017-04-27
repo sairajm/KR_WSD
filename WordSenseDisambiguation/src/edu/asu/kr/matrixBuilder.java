@@ -17,7 +17,11 @@ public class matrixBuilder {
 				{
 					w = w.toLowerCase();
 					if(start)
-					{
+					{ 
+						/*if(key.equals("album"))
+						{
+							System.out.println("Hey i found album");
+						}*/
 						int index = getIndex(keys, w);
 						int inner = cMatrix[outer][index];
 						inner = inner + 1;
@@ -45,6 +49,10 @@ public class matrixBuilder {
 		{
 			if(s.equals(w))
 			{
+				/*if(s.equals("bitter"))
+				{
+					System.out.println("hey I found bitter");
+				}*/
 				return count;
 			}
 			count = count + 1;

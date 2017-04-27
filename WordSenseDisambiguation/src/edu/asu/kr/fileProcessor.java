@@ -45,7 +45,34 @@ public class fileProcessor {
 		
 		return null;
 	}
-	
+	public String readParagraph(String path)
+	{
+		try
+		{
+			FileReader reader = new FileReader(path);
+			BufferedReader buff = new BufferedReader(reader);
+			StringBuilder builder = new StringBuilder();
+			if(buff.readLine()==null)
+			{
+				System.out.println("Nothing read");
+			}
+			while(buff.readLine()!=null)
+			{
+				//System.out.println(buff.readLine());
+				builder.append(buff.readLine());
+			}
+			buff.close();
+			String paragraph = builder.toString();
+			//System.out.println(builder.toString()); 
+			return paragraph;
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		
+		return null;
+	}
 	public String[] readSentences(String path)
 	{
 		try
@@ -53,6 +80,10 @@ public class fileProcessor {
 			FileReader reader = new FileReader(path);
 			BufferedReader buff = new BufferedReader(reader);
 			StringBuilder builder = new StringBuilder();
+			if(buff.readLine()==null)
+			{
+				System.out.println("Nothing read");
+			}
 			while(buff.readLine()!=null)
 			{
 				//System.out.println(buff.readLine());

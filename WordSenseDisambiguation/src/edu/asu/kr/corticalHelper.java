@@ -30,6 +30,20 @@ public class corticalHelper {
 		
 		return keywords;
 	}
+	public List<String> allKeyWords(String s)
+	{
+		FullClient fullClient = new FullClient("f517da50-1d80-11e7-b22d-93a4ae922ff1");
+		List<String> keywords = new ArrayList<>();
+		try
+		{
+			keywords = fullClient.getKeywordsForText(s);
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		return keywords;
+	}
 	public List<Term> getRelatedWords(String word)
 	{
 		//LiteClient lite = new LiteClient("f517da50-1d80-11e7-b22d-93a4ae922ff1");

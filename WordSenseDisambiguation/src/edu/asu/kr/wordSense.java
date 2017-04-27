@@ -30,8 +30,9 @@ public class wordSense {
 		ArrayList<String> fileNames = fp.readDirectory(path);
 		Set<String> arWords = new HashSet<String>();
 		HashMap<String,Integer> data = new HashMap<String,Integer>();
-		HashMap<String, Integer> map = new HashMap<String, Integer>();
+		
 		Set<String> rWords = new HashSet<String>();
+		
 		for(int i =0 ; i<fileNames.size(); i++)
 		{
 			
@@ -39,19 +40,37 @@ public class wordSense {
 			String path1 = path +fileNames.get(i);
 			System.out.println("file: "+path1);
 			String[] sentences = fp.readSentences(path1);
+			//System.out.println(sentences.length + " no of sentences read");
+			String paragraph = fp.readParagraph(path1);
+			//System.out.println(paragraph);
 			System.out.println("*******************");
 			corticalHelper ch = new corticalHelper();
 			System.out.println("getting related words of " + word);
 			//if(!data.containsKey(word))
 			{
+				HashMap<String, Integer> map = new HashMap<String, Integer>();
+				List<String> keyWords = new ArrayList<String>();
 				map = ch.uniqueRelatedWords(word);
+				keyWords = ch.allKeyWords(paragraph);
+				System.out.println(keyWords.size() + " keywords obtained" + " and " + map.size() + " related words obtained");
 				rWords = map.keySet();
 				arWords.addAll(rWords);
+				arWords.addAll(keyWords);
+				//arWords.add(word);
 				//data.put(word, 0);
 			}
 			System.out.println("Building matrix for " +arWords.size() + " elements");
-			matrixBuilder mb = new matrixBuilder();
-			cMatrix = mb.coOccurrenceMatrix(cMatrix, rWords, sentences);
+			
+		}
+		matrixBuilder mb = new matrixBuilder();
+		for(int i =0 ; i<fileNames.size(); i++)
+		{
+			
+			String word = fp.getWordName(fileNames.get(i));
+			String path1 = path +fileNames.get(i);
+			System.out.println("file: "+path1);
+			String[] sentences = fp.readSentences(path1);
+			cMatrix = mb.coOccurrenceMatrix(cMatrix, arWords, sentences);
 			System.out.println("Matrix built");
 			System.out.println("Matrix size now " +cMatrix.length);
 		}
