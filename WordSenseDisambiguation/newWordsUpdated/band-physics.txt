@@ -1,0 +1,210 @@
+IEEE PHOTONICS TECHNOLOGY LETTERS, VOL. 11, NO. 6, JUNE 1999 653
+1.5- m-Band Wavelength Conversion
+Based on Cascaded Second-Order
+Nonlinearity in LiNbO Waveguides
+M. H. Chou, I. Brener, M. M. Fejer, E. E. Chaban, and S. B. Christman
+Abstract—We report wavelength conversion and spectral inversion
+using cascaded second-order nonlinearity in periodically
+poled LiNbO3 waveguides pumped at 1.5 m. The converter
+has an internal conversion efficiency of 8
+dB, a conversion
+band of 76 nm, and a constant conversion efficiency for
+the 50-dB range of signal powers tested.
+Index Terms—Nonlinear optics, optical fiber communications,
+optical frequency conversion, wavelength conversion, wavelengthdivision
+multiplexing.
+WAVELENGTH conversion is an important function
+in wavelengt-division-multiplexed (WDM) optical networks.
+Among numerous demonstrated wavelength conversion
+techniques, difference frequency generation (DFG) [1] is attractive
+in several respects: it is an instantaneous process
+that easily accommodates more than terahertz modulation
+bands, can simultaneously up and down convert multiple
+channels with equal efficiencies, has negligible spontaneous
+emission noise and has no intrinsic frequency chirp.
+DFG-based wavelength converters have been demonstrated
+in AlGaAs [1], [2] and LiNbO waveguides [3]–[5], showing
+promising results for WDM wavelength conversion. However,
+the use of DFG and current device efficiencies indictate the
+need for a single mode pump laser with 50–100 mW of
+power operating in the 750–800-nm range. Moreover, it is
+difficult to simultaneously launch the 780-nm pump and 1.5-
+m band signals into the fundamental mode of the waveguide,
+although this has been solved using an integrated mode
+coupling structure [4] In this letter, we demonstrate wavelength
+conversion in LiNbO waveguides using a cascaded secondorder
+nonlinearity [6]–[8], where both the input
+pump and signals are in the 1.5- m band. Mode matching in
+this case is simplified compared to DFG pumped at 780 nm,
+since all input wavelengths are in the same band and can be
+launched into a single port.
+The -based device for 1.5- m band wavelength
+conversion uses a pump in the 1550-nm region. The pump
+at frequency is upconverted to frequency by secondManuscript
+received November 24, 1998; revised February 16, 1999. This
+work was supported by the Office of Naval Research through JSEP, by
+Lucent Technologies, and by the Defense Advanced Research Projects Agency
+through the CNOM at Stanford University, Stanford, CA.
+M. H. Chou and M. M. Fejer are with E. L. Ginzton Laboratory, Stanford
+University, Stanford, CA 94305-4085 USA.
+I. Brener, E. E. Chaban, and S. B. Christman are with Bell Laboratories,
+Lucent Technologies, Murray Hill, NJ 07974 USA.
+Publisher Item Identifier S 1041-1135(99)04221-4.
+harmonic generation (SHG) via the second-order nonlinearity
+. The generated simultaneously mixes with input
+signals to generate wavelength shifted outputs
+by DFG via another process. Phasematching
+between interacting waves for both SHG and DFG is required,
+and this can be accomplished by choosing an appropriate
+quasi-phasematching (QPM) grating period. It is interesting to
+note that this process mimics four-wave mixing
+(FWM) which uses the third-order nonlinearity The
+effective of such process in LiNbO under quasiphasematching
+condition is – times larger than that of silica
+glass. The allows the use of a very short sample
+when compared to fiber, and has better noise figure compared
+to FWM in semiconductor optical amplifiers. The converted
+output is related to pump power and input signal power in the
+low conversion efficiency approximation by [7]
+(1)
+where and are converted output power, pump
+power and signal power, respectively. is the normalized
+efficiency (the same for SHG and near degenerate DFG) in
+units of mW cm (this number is proportional to both
+the mode overlap between the interacting waves and the
+material nonlinearity , and is the interaction length.
+The conversion efficiency scales with the fourth power of
+the interaction length, so doubling the device length will
+increase the conversion efficiency by a factor of 16. In the
+high-conversion efficiency regime, the exponent of in 1 is
+less than 4 due to pump depletion. In an optimized LiNbO
+waveguide with a normalized efficiency of 150%/W cm (or
+0.0015 mW cm and 6-cm interaction length, one can
+achieve 0-dB conversion efficiency with 75 mW of pump
+power; or 3-dB gain with 100 mW of pump power.
+We fabricated the waveguides by annealed proton exchange
+in periodically poled LiNbO (PPLN) [9]. The device used
+in this experiment is 4 cm long, has a QPM period of 15
+m, waveguide width of 12 m, proton exchange depth of
+0.7 m, and was annealed for 26 h at 325 C. The above
+parameters allow phasematching at room temperature between
+the fundamental mode of the pump at 1556 nm and the
+fundamental mode of SHG wave at 778 nm. We can tune the
+pump wavelength by using waveguides with different QPM
+period and/or temperature tuning. The normalized efficiency
+of this device is 65%/W cm . One can achieve a normalized
+efficiency of 150%/W cm by optimizing the mode overlap
+1041–1135/99$10.00 ? 1999 IEEE
+654 IEEE PHOTONICS TECHNOLOGY LETTERS, VOL. 11, NO. 6, JUNE 1999
+Fig. 1. Experimental setup. ECL: External cavity laser. BPF: Bandpass filter.
+PPLN WG: Periodically poled LiNbO3 waveguide. OSA: Optical spectrum
+analyzer. The waveguide is fiber coupled at both the input and the output.
+The later is analyzed by an OSA and power meter.
+between the fundamental mode of the pump and the first highorder
+mode of the second harmonic. At the input and output of
+this device, the waveguides are optimized for fiber coupling by
+tapering a section of 1-mm length to adiabatically transform
+the modes into and out of the wavelength conversion sections.
+Fig. 1 shows a schematic diagram of the experimental setup
+used in this work. The pump laser is an external cavity laser
+(ECL) amplified by an erbium-doped fiber amplifier (EDFA)
+to a level of 300 mW and filtered through a FBG in order to
+supress the amplified spontaneous emission (ASE). This pump
+is combined with signal sources generated in four different
+ECL’s and fiber launched into the waveguides. The output of
+the waveguide is fiber coupled and later analyzed in an optical
+spectrum analyzer (OSA) and power meter. The fiber to fiber
+coupling loss in this configuration is 4.5 dB due to reflection
+losses at the uncoated endfaces ( 1.7 dB), mode mismatching
+between the fibers and the waveguide ( 1.3 dB), and intrinsic
+waveguide losses ( 1.5 dB, i.e., 0.35 dB/cm).
+We first characterized the device by measuring the SHG
+power versus pump wavelength. We chose to keep the waveguide
+at 90 C (or higher) in order to avoid photorefractive
+effects. This effectively shifts the phasematching wavelength
+to 1562 nm, but keeps the other parameters unchanged. The
+device shows a near-ideal sinc wavelength tuning curve with
+a peak internal efficiency (output SHG power divided by
+square of input pump power) of 500%/W and an FWHM of
+0.27 nm at low pump power. At higher pump power ( 100
+mW), the device displayed a distorted wavelength tuning
+curve due to photorefractive effects of the generated secondharmonic
+waves, which results in waveguide nonuniformity
+and reduces the effective device length.
+We performed simultaneous multichannel wavelength conversion
+with a pump power of 110 mW launched inside the
+waveguide; the results, in Fig. 2, show that the efficiencies
+are the same ( 15 dB) for all the input channels. The best
+conversion efficiency ( 8 dB) was obtained with a pump
+power of 175 mW in a similar device with a slightly different
+QPM period and operated at 120 C, as shown in the inset of
+Fig. 2.
+For -based wavelength converters, the converted
+electric field is the complex conjugate of signal electric field,
+meaning that the output electric field spectrum is the mirror
+image of input spectrum about the pump wavelength. We show
+the spectral inversion properties of our device in Fig. 3 using
+an asymmetric input spectrum, formed by combining an ECL
+Fig. 2. Simultaneous wavelength conversion of four WDM channels with
+the same conversion efficiencies. Pump power is 110 mW inside the PPLN
+waveguide at a wavelength of 1562 nm. The inset shows a 8-dB
+conversion
+efficiency of a similar device operated at 120 C with 175 mW of pump
+power.
+Fig. 3. Spectral inversion of the (2) : (2) wavelength converter. The
+output electric field spectrum is the mirror image of input spectrum about the
+pump wavelength, a feature that can be used to invert the signal chirp.
+signal and filtered ASE from an EDFA. This feature can be
+used to invert the signal chirp for dispersion management in
+a transmission system.
+Fig. 4 shows the measured band of this wavelength
+converter when tuning the input signal wavelength while
+keeping the pump wavelength fixed at 1562 nm. This device
+has a 3-dB signal band of 76 nm, which is wider than
+the theoretical band of an ideal 4-cm-long device due to
+photorefractive effects at high pump powers.
+We tested the linearity of this wavelength converter by
+varying the input signal power, as shown in Fig. 5. We
+measure a linear response for more than 50 dB with a
+maximum input signal power of 0 dBm. The only saturation
+mechanism in this device comes from the depletion of SHG or
+pump power. We estimate a 0.16-dB deviation from linearity
+for a input power of 0 dBm in an ideal 6-cm-long device with
+a normalized efficiency of 150%/W cm and pump power of
+100 mW. For a device with a 2.5-cm interaction length, a
+normalized efficiency of 65%/W cm , and pumped by 100
+mW, the deviation at 0-dBm signal power should be 0.006 dB,
+which is smaller than the resolution in this experiment. Our
+measurements confirm these estimates.
+The conversion efficiency of this device currently is limited
+by photorefractive effects at high pump powers, which can
+CHOU et al.: 1.5- m-BAND WAVELENGTH CONVERSION 655
+Fig. 4. Conversion efficiency vs. input signal wavelength. The closed circles
+are the measured results and the solid line is a theoretical fit to a device with
+an effective interaction length of 2.5 cm. The 1562-nm pump has a power of
+135 mW inside the waveguide.
+Fig. 5. Single-channel output/input transfer curve of the (2) : (2) wavelength
+converter. This device has a linear response for more than 50-dB range
+of input signal powers.
+be reduced by operating at higher temperature or annealing
+samples in an O atmosphere. In addition, it has been shown
+that MgO:LiNbO has several orders of magnitude more
+resistance to photorefractive effects than congruent LiNbO
+and thus a similar device fabricated on MgO:LiNbO would
+operate more efficiently.
+In summary, we have demonstrated wavelength conversion
+within the 1.5- m band using in PPLN waveguides.
+This approach requires only lasers operating in the 1550-nm
+region. We have shown spectral inversion and simultaneous
+conversion of four WDM channels, a static internal conversion
+efficiency of 8 dB, a conversion band of 76 nm, and
+a linearity over an input power range of more than 50 dB.
+With further improvements, a wavelength converter with 0-
+dB conversion efficiency or even gain is a feasible goal. In
+addition, this -based wavelength converter can also
+function as clock recovery or time gating component by use
+of a pulsed pump.
+ACKNOWLEDGMENT
+The authors thank Crystal Technology for donating LiNbO
+substrates and B. Eggleton for providing the fiber Bragg
+grating.
