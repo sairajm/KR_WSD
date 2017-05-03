@@ -1,0 +1,19 @@
+In linguistics, morphological derivation is the process of forming a new word from an existing word, often by adding a prefix or suffix, such as -ness or un-. For example, happiness and unhappy derive from the root word hap.
+
+It is differentiated from inflection, which is the modification of a word to form different grammatical categories without changing its core meaning, as with determines, determining, and determined, from the root determine
+
+Derivational morphology often involves the addition of a derivational suffix or other affix. Such an affix usually applies to words of one lexical category (part of speech) and changes them into words of another such category. For example, the English derivational suffix -ly changes adjectives into adverbs.
+
+Derivation can also occur without any change of form, for example telephone (noun) and to telephone. This is known as conversion, or zero derivation.
+
+Derivation that results in a noun may be called nominalization. This may involve the use of an affix (as with happy → happiness, employ → employee), or may occur via conversion (as with the derivation of the noun run from the verb to run). In contrast, such that result in a verb may be called verbalization (as with from the noun butter into the verb to butter).
+
+Derivation can be contrasted with inflection, in that derivation produces a new word (a distinct lexeme), whereas inflection produces grammatical variants of the same word.
+
+Generally speaking, inflection applies in more or less regular patterns to all members of a part of speech (for example, nearly every English verb adds -s for the third person singular present tense), while derivation follows less consistent patterns (for example, the nominalizing suffix -ity can be used with the adjectives modern and dense, but not with open or strong). However, it is important to note that derivations and inflections can share homonyms, that being, morphemes that have the same sound, but not the same meaning. For example, when the affix -er, is added to an adjective, as in small-er, it acts as an inflection, but when added to a verb, as in cook-er, it acts as a derivation.
+
+Derivation can be contrasted with other types of word formation such as compounding. For full details see Word formation.
+
+Note that derivational affixes are bound morphemes – they are meaningful units, but can only normally occur when attached to another word. In that respect, derivation differs from compounding by which free morphemes are combined (lawsuit, Latin professor). It also differs from inflection in that inflection does not create new lexemes but new word forms.
+
+Derivational patterns differ in the degree to which they can be called productive. A productive pattern or affix is one that is commonly used to produce novel forms. For example, the negating prefix un- is more productive in English than the alternative in-; both of them occur in established words (such as unusual and inaccessible), but faced with a new word which does not have an established negation, a native speaker is more likely to create a novel form with un- than with in-. The same thing happens with suffixes. For example, if comparing two words Thatcherite and Thatcherist, the analysis shows that both suffixes -ite and -ist are productive and can be added to proper names, moreover, both derived adjectives are established and have the same meaning. But the suffix -ist is more productive and, thus, can be found more often in word formation not only from proper names
