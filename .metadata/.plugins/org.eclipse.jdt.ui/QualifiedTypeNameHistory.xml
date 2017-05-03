@@ -5,9 +5,25 @@
 <fullyQualifiedTypeName name="io.cortical.retina.client.LiteClient"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="it.uniroma1.lcl.babelnet.BabelNet"/>
 <fullyQualifiedTypeName name="it.uniroma1.lcl.babelnet.BabelSense"/>
 <fullyQualifiedTypeName name="io.cortical.retina.model.Language"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.nio.file.ReadOnlyFileSystemException"/>
+<fullyQualifiedTypeName name="io.cortical.retina.rest.JsonUtil"/>
+<fullyQualifiedTypeName name="io.cortical.retina.client.FullClient"/>
+<fullyQualifiedTypeName name="io.cortical.retina.model.Term"/>
+<fullyQualifiedTypeName name="io.cortical.retina.model.Context"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="edu.asu.kr.graphBuilder"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="it.uniroma1.lcl.babelnet.BabelSynset"/>
+<fullyQualifiedTypeName name="it.uniroma1.lcl.babelnet.data.BabelPOS"/>
 </qualifiedTypeNameHistroy>

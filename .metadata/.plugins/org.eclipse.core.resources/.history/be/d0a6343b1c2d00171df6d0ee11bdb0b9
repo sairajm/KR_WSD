@@ -1,0 +1,82 @@
+package edu.asu.kr;
+
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import it.uniroma1.lcl.babelnet.BabelNet;
+import it.uniroma1.lcl.babelnet.BabelSense;
+import it.uniroma1.lcl.babelnet.BabelSynset;
+import it.uniroma1.lcl.babelnet.data.BabelPOS;
+import it.uniroma1.lcl.jlt.util.Language;
+
+public class wordSense {
+	
+	public static void main(String args[])
+	{
+		boolean create_graph = false;
+		if(create_graph)
+		{
+			graphBuilder graph = new graphBuilder();
+			graph.graphStage();
+		}
+		String path ="C:\\Users\\Sairaj\\workspace\\WordSenseDisambiguation\\csvs\\apple.csv";
+		String input = "I am using apple computer to perform day to day computations along with my phone";
+		wordSense sense = new wordSense();
+		sense.findScores(input, path);
+		try
+		{
+			ArrayList<BabelSense> meanings = (ArrayList)sense.getSenses("apple");
+			for(BabelSense s : meanings)
+			{
+				System.out.println(s.getDBPediaURI());
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println("Exception occured "+e);
+		}
+	}
+	
+	public void findScores(String input, String path)
+	{
+		corticalHelper ch = new corticalHelper();
+		ArrayList<String> keywords = (ArrayList) ch.allKeyWords(input);
+		System.out.println("keywords obtained = "+keywords.size());
+		fileProcessor fp = new fileProcessor();
+		HashMap<Integer, ArrayList<String>> clusters=  fp.readCSV(path);
+		Set<Integer> keys = clusters.keySet();
+		HashMap<Integer, Double> scores = new HashMap<>();
+		for(int i : keys)
+		{
+			if(!scores.containsKey(i))
+			{
+				wsHelper wp = new wsHelper();
+				double score = wp.findSimilarity(keywords, clusters.get(i));
+				scores.put(i, score);
+			}
+		}
+		
+		System.out.println("Scores computed");
+		Set<Integer> similarityKeys = scores.keySet();
+		for(int i : similarityKeys)
+		{
+			System.out.println("Cluster " +i +" = " + scores.get(i));
+		}
+		
+	}
+	public List<BabelSense> getSenses(String word)throws IOException
+	{
+		
+		BabelNet bn = BabelNet.getInstance();
+		BabelPOS pos = bs.getPOS();
+		bn.getSynsetsFromWikipediaTitle(Language.EN, word, pos);
+		List<BabelSense> senses = bn.getSenses(word, Language.EN);
+		return senses;
+	}
+	
+	
+}

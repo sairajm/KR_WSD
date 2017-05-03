@@ -9,88 +9,85 @@ import java.util.List;
 import java.util.Set;
 import it.uniroma1.lcl.babelnet.BabelNet;
 import it.uniroma1.lcl.babelnet.BabelSense;
+import it.uniroma1.lcl.babelnet.BabelSynset;
+import it.uniroma1.lcl.babelnet.data.BabelPOS;
 import it.uniroma1.lcl.jlt.util.Language;
 
 public class wordSense {
 	
 	public static void main(String args[])
 	{
-		String path = "C:\\Users\\Sairaj\\workspace\\WordSenseDisambiguation\\DataSets\\";
-		//String path2 ="C:\\Users\\Sairaj\\workspace\\WordSenseDisambiguation\\src\\edu\\asu\\kr\\apple.txt";
-		//String path = "sample.txt";
-		int[][] cMatrix = new int[3000][3000];
-		for(int i=0; i<1000; i++)
+		boolean create_graph = false;
+		if(create_graph)
 		{
-			for(int j=0; j<1000; j++)
+			graphBuilder graph = new graphBuilder();
+			graph.graphStage();
+		}
+		boolean find_sense = true;
+		if(find_sense)
+		{
+			String path ="C:\\Users\\Sairaj\\workspace\\WordSenseDisambiguation\\csvs\\bitter.csv";
+			String path1 = "C:\\Users\\Sairaj\\workspace\\WordSenseDisambiguation\\input\\bitter-test1.txt";
+			fileProcessor fp = new fileProcessor();
+			String[] sentences = fp.readSentencesModified(path1);
+			for(String s : sentences)
 			{
-				cMatrix[i][j]=0;
+				System.out.println("For input sentence :"+s);
+				String input = s;//"I am using apple computer to perform day to day computations along with my phone";
+				wordSense sense = new wordSense();
+				HashMap<Integer, Double> scores=sense.findScores(input, path);
+				double max_score =0.0;
+				Set<Integer> similarityKeys = scores.keySet();
+				int relevant_cluster = 0;
+				for(int i : similarityKeys)
+				{
+					double score = 0.0;
+					score = scores.get(i);
+					if(score > max_score)
+					{
+						max_score = score;
+						relevant_cluster = i;
+					}
+				}
 			}
-		}
-		fileProcessor fp = new fileProcessor();
-		ArrayList<String> fileNames = fp.readDirectory(path);
-		Set<String> arWords = new HashSet<String>();
-		HashMap<String,Integer> data = new HashMap<String,Integer>();
-		
-		Set<String> rWords = new HashSet<String>();
-		
-		for(int i =0 ; i<fileNames.size(); i++)
-		{
-			
-			String word = fp.getWordName(fileNames.get(i));
-			String path1 = path +fileNames.get(i);
-			System.out.println("file: "+path1);
-			String[] sentences = fp.readSentences(path1);
-			//System.out.println(sentences.length + " no of sentences read");
-			String paragraph = fp.readParagraph(path1);
-			//System.out.println(paragraph);
-			System.out.println("*******************");
-			corticalHelper ch = new corticalHelper();
-			System.out.println("getting related words of " + word);
-			//if(!data.containsKey(word))
-			{
-				HashMap<String, Integer> map = new HashMap<String, Integer>();
-				List<String> keyWords = new ArrayList<String>();
-				map = ch.uniqueRelatedWords(word);
-				keyWords = ch.allKeyWords(paragraph);
-				System.out.println(keyWords.size() + " keywords obtained" + " and " + map.size() + " related words obtained");
-				rWords = map.keySet();
-				arWords.addAll(rWords);
-				arWords.addAll(keyWords);
-				//arWords.add(word);
-				//data.put(word, 0);
-			}
-			System.out.println("Building matrix for " +arWords.size() + " elements");
 			
 		}
-		matrixBuilder mb = new matrixBuilder();
-		for(int i =0 ; i<fileNames.size(); i++)
-		{
-			
-			String word = fp.getWordName(fileNames.get(i));
-			String path1 = path +fileNames.get(i);
-			System.out.println("file: "+path1);
-			String[] sentences = fp.readSentences(path1);
-			cMatrix = mb.coOccurrenceMatrix(cMatrix, arWords, sentences);
-			System.out.println("Matrix built");
-			System.out.println("Matrix size now " +cMatrix.length);
-		}
-		String path3 ="C:\\Users\\Sairaj\\workspace\\WordSenseDisambiguation\\src\\edu\\asu\\kr\\output.txt";
-		graphBuilder graph = new graphBuilder();
-		try
-		{
-			graph.writeGDF(cMatrix, path3, arWords);
-		}
-		catch(Exception e)
-		{
-			System.out.println(e);
-		}
+
 	}
 	
+	public HashMap<Integer, Double> findScores(String input, String path)
+	{
+		corticalHelper ch = new corticalHelper();
+		ArrayList<String> keywords = (ArrayList) ch.allKeyWords(input);
+		System.out.println("keywords obtained = "+keywords.size());
+		fileProcessor fp = new fileProcessor();
+		HashMap<Integer, ArrayList<String>> clusters=  fp.readCSV(path);
+		Set<Integer> keys = clusters.keySet();
+		HashMap<Integer, Double> scores = new HashMap<>();
+		for(int i : keys)
+		{
+			if(!scores.containsKey(i))
+			{
+				wsHelper wp = new wsHelper();
+				double score = wp.findSimilarity(keywords, clusters.get(i));
+				scores.put(i, score);
+			}
+		}
+		
+		System.out.println("Scores computed");
+		Set<Integer> similarityKeys = scores.keySet();
+		for(int i : similarityKeys)
+		{
+			System.out.println("Cluster " +i +" = " + scores.get(i));
+		}
+		
+		return scores;
+	}
 	public List<BabelSense> getSenses(String word)throws IOException
 	{
+		
 		BabelNet bn = BabelNet.getInstance();
 		List<BabelSense> senses = bn.getSenses(word, Language.EN);
-		
 		return senses;
 	}
 	

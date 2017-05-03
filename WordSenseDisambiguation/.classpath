@@ -14,5 +14,26 @@
 	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/commons-httpclient-3.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/jackson-databind-2.1.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/retina-api-java-sdk-1.0.2-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/jawjaw-1.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/ws4j-1.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/lucene-6.5.1/core/lucene-core-6.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/BabelNet-API-3.7/lib/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/BabelNet-API-3.7/lib/commons-beanutils-core-1.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/BabelNet-API-3.7/lib/commons-codec-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/BabelNet-API-3.7/lib/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/BabelNet-API-3.7/lib/commons-configuration-1.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/BabelNet-API-3.7/lib/commons-digester-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/BabelNet-API-3.7/lib/commons-lang-2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/BabelNet-API-3.7/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/BabelNet-API-3.7/lib/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/BabelNet-API-3.7/lib/guava-18.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/BabelNet-API-3.7/lib/httpclient-4.3.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/BabelNet-API-3.7/lib/httpcore-4.3.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/BabelNet-API-3.7/lib/icu4j-56.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/BabelNet-API-3.7/lib/jwi-2.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/BabelNet-API-3.7/lib/log4j-api-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/BabelNet-API-3.7/lib/log4j-core-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/BabelNet-API-3.7/lib/lucene-core-4.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sairaj/Downloads/BabelNet-API-3.7/lib/lucene-queryparser-4.9.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

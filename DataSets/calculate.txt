@@ -1,9 +1,0 @@
-A calculation is a deliberate process that transforms one or more inputs into one or more results, with variable change. The term is used in a variety of senses, from the very definite arithmetical calculation of using an algorithm, to the vague heuristics of calculating a strategy in a competition, or calculating the chance of a successful relationship between two people.
-
-For example, multiplying 7 by 6 is a simple algorithmic calculation. Estimating the fair price for financial instruments using the Black–Scholes model is a complex algorithmic calculation.
-
-Statistical estimations of the likely election results from opinion polls also involve algorithmic calculations, but produces ranges of possibilities rather than exact answers.
-
-To calculate means to ascertain by computing.[citation needed] The English word derives from the Latin calculus, which originally meant a small stone in the gall-bladder (from Latin calx). It also meant a pebble used for calculating, or a small stone used as a counter in an abacus (Latin abacus, Greek abax). The abacus was an instrument used by Greeks and Romans for arithmetic calculations, preceding the slide-rule and the electronic calculator, and consisted of perforated pebbles sliding on an iron bars.
-
-Calculate comes from the Greek word Κάχληκα or gravel in English because Greeks used gravel for counting. Calculation is a prerequisite for computation.[1] The difference in the meaning of calculation and computation appears to originate from the late medieval period.

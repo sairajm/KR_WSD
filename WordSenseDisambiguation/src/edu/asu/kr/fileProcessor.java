@@ -104,6 +104,37 @@ public class fileProcessor {
 		return null;
 	}
 	
+	public String[] readSentencesModified(String path)
+	{
+		try
+		{
+			FileReader reader = new FileReader(path);
+			BufferedReader buff = new BufferedReader(reader);
+			StringBuilder builder = new StringBuilder();
+			if(buff.readLine()==null)
+			{
+				System.out.println("Nothing read");
+			}
+			while(buff.readLine()!=null)
+			{
+				//System.out.println(buff.readLine());
+				builder.append(buff.readLine());
+			}
+			buff.close();
+			String paragraph = builder.toString();
+			//System.out.println(paragraph);
+			//http://stackoverflow.com/questions/21430447/how-to-split-paragraphs-into-sentences
+			String[] sentences = paragraph.split("\\."); 
+			return sentences;
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		
+		return null;
+	}
+	
 	public HashMap<String, Integer> getFrequency(String[] sentences)
 	{
 		HashMap<String, Integer> words = new HashMap<>();
@@ -126,5 +157,61 @@ public class fileProcessor {
 		}
 		return words;
 	}
-
+	
+	public HashMap<Integer, ArrayList<String>> readCSV(String path)
+	{
+		HashMap<Integer, ArrayList<String>> nodes = new HashMap<>();
+ 		try
+		{
+ 			File file = new File(path);
+ 			if(file.canRead())
+ 			{
+ 				System.out.println("can read this file");
+ 			}
+ 			else
+ 			{
+ 				System.out.println("Can't read this file");
+ 			}
+			FileReader reader = new FileReader(path);
+			BufferedReader buff = new BufferedReader(reader);
+			/*if(buff.readLine()==null)
+			{
+				System.out.println("Nothing read");
+			}
+			else
+			{
+				System.out.println("reading from file");
+			}*/
+			//buff.readLine();
+			while(buff.readLine()!=null)
+			{
+				String temp = buff.readLine();
+				System.out.println(temp);
+				String[] columns = temp.split(",");
+				String word = columns[0];
+				int cluster = Integer.parseInt(columns[1]);
+				
+				if(nodes.containsKey(cluster))
+				{
+					ArrayList<String> word_list = nodes.get(cluster);
+					word_list.add(word);
+				}
+				else
+				{
+					ArrayList<String> word_list = new ArrayList<>();
+					word_list.add(word);
+					nodes.put(cluster, word_list);
+				}
+			}
+			buff.close();
+			System.out.println("CSV file read");
+			return nodes;
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+ 		return null;
+	}
+		
 }

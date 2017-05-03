@@ -1,0 +1,86 @@
+package edu.asu.kr;
+
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import it.uniroma1.lcl.babelnet.BabelNet;
+import it.uniroma1.lcl.babelnet.BabelSense;
+import it.uniroma1.lcl.babelnet.BabelSynset;
+import it.uniroma1.lcl.babelnet.data.BabelPOS;
+import it.uniroma1.lcl.jlt.util.Language;
+
+public class wordSense {
+	
+	public static void main(String args[])
+	{
+		boolean create_graph = false;
+		if(create_graph)
+		{
+			graphBuilder graph = new graphBuilder();
+			graph.graphStage();
+		}
+		boolean find_sense = true;
+		if(find_sense)
+		{
+			String path ="C:\\Users\\Sairaj\\workspace\\WordSenseDisambiguation\\csvs\\apple.csv";
+			String input = "I am using apple computer to perform day to day computations along with my phone";
+			wordSense sense = new wordSense();
+			HashMap<Integer, Double> scores=sense.findScores(input, path);
+			double max_score =0.0;
+			Set<Integer> similarityKeys = scores.keySet();
+			int relevant_cluster = 0;
+			for(int i : similarityKeys)
+			{
+				double score = 0.0;
+				score = scores.get(i);
+				if(score > max_score)
+				{
+					
+				}
+			}
+		}
+		
+	}
+	
+	public HashMap<Integer, Double> findScores(String input, String path)
+	{
+		corticalHelper ch = new corticalHelper();
+		ArrayList<String> keywords = (ArrayList) ch.allKeyWords(input);
+		System.out.println("keywords obtained = "+keywords.size());
+		fileProcessor fp = new fileProcessor();
+		HashMap<Integer, ArrayList<String>> clusters=  fp.readCSV(path);
+		Set<Integer> keys = clusters.keySet();
+		HashMap<Integer, Double> scores = new HashMap<>();
+		for(int i : keys)
+		{
+			if(!scores.containsKey(i))
+			{
+				wsHelper wp = new wsHelper();
+				double score = wp.findSimilarity(keywords, clusters.get(i));
+				scores.put(i, score);
+			}
+		}
+		
+		System.out.println("Scores computed");
+		Set<Integer> similarityKeys = scores.keySet();
+		for(int i : similarityKeys)
+		{
+			System.out.println("Cluster " +i +" = " + scores.get(i));
+		}
+		
+		return scores;
+	}
+	public List<BabelSense> getSenses(String word)throws IOException
+	{
+		
+		BabelNet bn = BabelNet.getInstance();
+		List<BabelSense> senses = bn.getSenses(word, Language.EN);
+		return senses;
+	}
+	
+	
+}
