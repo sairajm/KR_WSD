@@ -7,3 +7,6 @@ In wordSenseDisambiguation.java, change the input sentence and in datasets folde
 
 Output:
 Outputs the cluster which has highest similarity to the context. This will represent the sense of the word for that context.
+
+Note:
+This was an academic project submitted by during my study at Arizona State University. Please do not copy this work or republish as your own.
