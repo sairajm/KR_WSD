@@ -9,4 +9,4 @@ Output:
 Outputs the cluster which has highest similarity to the context. This will represent the sense of the word for that context.
 
 Note:
-This was an academic project submitted by during my study at Arizona State University. Please do not copy this work or republish as your own.
+This was an academic project submitted by me during my study at Arizona State University. Please do not copy this work or republish as your own.
